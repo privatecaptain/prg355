@@ -1,5 +1,14 @@
-#include <iostream>
+/*
+Harpreet Boparai
+Student ID : 012 0145 159
+*/
 
+
+
+
+
+#include <iostream>
+#include "iomanip"
 using namespace std;
 
 int main(void){
@@ -18,11 +27,10 @@ int main(void){
 
 	for (int i = 0; i < rows; ++i)
 	{
-		for (int j = 0; j < columns; ++j)
-		{
-			cout << '#';
-		}
-		cout << endl;
+		cout << setw(columns)
+			 << setfill('#')
+			 << '#';
+ 		cout << endl;
 	}
 
 
